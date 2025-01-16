@@ -90,7 +90,7 @@ main h2 {
 }
 
 .form-container iframe {
-    width: 80%; /* Make iframe take the full width of the container */
+    width: 60%; /* Make iframe take the full width of the container */
     height: 100%; /* Make iframe take the full height of the container */
 }
 footer{
