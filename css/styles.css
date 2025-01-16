@@ -13,22 +13,30 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Make header take full viewport height */
-    width: 100%;
-    position: relative; /* Ensure the video is positioned relative to its container */
-    z-index: 1; /* Ensure the video is on top */
-
+    height: 50vh; /* Make header take full viewport height */
+    position: relative; /* Lock the header to the top of the page */
+    top: 0; /* Ensure the header is at the top */
+    left: 0; /* Ensure the header is at the left edge */
+ 
 }
 header video {
-    width: 100%; /* Make the video take the full width of the header */
-    height: auto; /* Maintain the aspect ratio */
-    min-width: 1000px; /* Set minimum width */
-    min-height: 1000px; /* Set minimum height */
+    height: 60vh; /* Maintain the aspect ratio */
     max-height: 2000px;
 }
-
-.container {
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text */
+    margin-top: 6vh; /* Ensure main content starts after the header */
+    z-index: 1; /* Ensure main content is below the header */
+}
+
+main h2 {
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0;
+    font-size: 2em;
 }
 
 .additional-header {
@@ -38,8 +46,8 @@ header video {
     text-align: center; /* Center the text */
     font-size: 1em; /* Adjust font size */
     width: 100%;
-    z-index: 1; /* Ensure the additional header is below the main header */
-    position: absolute;
+    z-index: 2; /* Ensure the additional header is below the main header */
+    position: relative;
     bottom: 0;
 
 
@@ -57,47 +65,32 @@ header video {
     height: auto;
     min-width: 1000px; /* Set minimum width */
     min-height: 800px; /* Set minimum height */
-    margin-top: 20px;
+    margin-top: 40px;
     
 }
 
 .background-container img {
-    width: 100%;
-    height: auto;
-    background-size: 140%; /* Zoom in the background image */
+    width: auto;
+    height: 100vh;
+    background-size: 100%; /* Zoom in the background image */
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; /* Center the text */
-}
-
-main h2 {
-    font-family: Trebuchet MS, sans-serif;
-    margin: 0;
-    font-size: 2em;
-}
-
 
 
 .form-container {
     position: absolute;
-    top: 40%; /* Move the container down */
+    top: 48%; /* Move the container down */
     left: 50%;
     transform: translate(-50%, -50%);
     background: transparent;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
     width: 40%; /* Adjust width */
-    height: 40%; /* Adjust height */
+    height: 70%; /* Adjust height */
     overflow: hidden; /* Hide overflow content */
    
 }
 
 .form-container iframe {
-    width: 100%; /* Make iframe take the full width of the container */
+    width: 80%; /* Make iframe take the full width of the container */
     height: 100%; /* Make iframe take the full height of the container */
 }
 footer{
@@ -105,6 +98,7 @@ footer{
     color: white; /* Set text color for the footer */
     text-align: center; /* Center the text */
     padding: 10px 0; /* Add padding to the footer */
+    margin-top: 10vh; /* Ensure main content starts after the header */
 }
 
 
