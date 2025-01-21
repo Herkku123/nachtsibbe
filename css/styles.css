@@ -21,7 +21,10 @@ header {
 }
 header video {
     height: 60vh; /* Maintain the aspect ratio */
+    width: 100%;
     max-height: 2000px;
+    min-width: 1000px; /* Set minimum width */
+    min-height: 300px; /* Set minimum height */
 }
 main {
     display: flex;
