@@ -69,6 +69,8 @@ main h2 {
     min-width: 1000px; /* Set minimum width */
     min-height: 800px; /* Set minimum height */
     margin-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     
 }
 
@@ -92,7 +94,7 @@ main h2 {
    
 }
 .bottom-box {
-    background-color: #919454da; /* Set background color for the box */
+    background-color: #455d7ada; /* Set background color for the box */
     padding: 20px;
     text-align: center; /* Center the content */
     position: relative; /* Fix the box to the bottom */
