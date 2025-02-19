@@ -88,8 +88,8 @@ main h2 {
     transform: translate(-50%, -50%);
     background: transparent;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
-    width: 40%; /* Adjust width */
-    height: 70%; /* Adjust height */
+    width: 60%; /* Adjust width */
+    height: 75%; /* Adjust height */
     overflow: hidden; /* Hide overflow content */
    
 }
